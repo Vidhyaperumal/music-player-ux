@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.player {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Album Image */
+.album img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.album img:hover {
+    transform: scale(1.05);
+}
+
+/* Text */
+h2 {
+    margin-top: 15px;
+}
+
+p {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* Progress Bar */
+.progress {
+    background: #ddd;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
+    background: #c33764;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.controls button {
+    background: #1d2671;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+    background: #c33764;
+}
+
+.play {
+    padding: 16px;
+    font-size: 22px;
+}
